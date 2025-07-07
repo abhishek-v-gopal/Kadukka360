@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, DollarSign, Package } from 'lucide-react';
+import { MapPin, Package } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Button } from '../common/Button';
 import { Input } from '../common/Input';
@@ -47,7 +47,6 @@ export const ProductFilters: React.FC<ProductFiltersProps> = ({
         {/* Price Range */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
-            <DollarSign size={16} />
             {t('filter.price_range')} (₹)
           </label>
           <div className="space-y-3">
